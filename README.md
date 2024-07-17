@@ -1,18 +1,20 @@
-# Vue 3 + TypeScript + Vite
+# Reddit Infinite Thread
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+This project aims to implement the infinite thread feature of Reddit using Vue 3. The project is only made for learning purposes.
 
-## Recommended IDE Setup
+## Demo 🚀
+Go through the demo on [code-sandbox](https://codesandbox.io/p/github/ishika2021/reddit-infinite-threads/main?workspaceId=817d7477-1086-462f-90e3-8d0fd4ebafeb)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Working 💻
+1. Type in a comment and press enter to add it to the list of main threads.
+2. To reply to a comment, click on the reply icon of that comment, which highlights the input box and adds the reply.
+3. The up and down icons are used to handle votes on a particular thread.
 
-## Type Support For `.vue` Imports in TS
+## Implementation 📝
+The project uses ` Vue's render function` to create the Comment component rather than the traditional templating used in Vue JS. The comment component is a `recursive component` that works efficiently for parent and child threads. 
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+## Screenshot 📷
+![image](https://github.com/user-attachments/assets/f3b8ce29-3de9-4695-be44-28fd06c0d152)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
